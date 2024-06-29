@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator_Demo</title>
+</head>
+<body>
+    <script>
+        var a=parseInt(prompt("enter the first number"));
+        var b=parseInt(prompt("enter the first number"));
+        var op=prompt("enter the operation");
+        if(op=='+'){
+            document.write(a+b);
+        }
+        else if(op=='-'){
+            document.write(a-b);
+        }
+        else if(op=='*'){
+            document.write(a*b);
+        }
+        else if(op=='/'){
+            document.write(a/b);
+        }
+        else{
+            document.write("enter the valid operation");
+        }
+    </script>
+</body>
+</html>

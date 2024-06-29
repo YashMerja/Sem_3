@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime_Demo</title>
+</head>
+<body>
+    <script>
+         var n=parseInt(prompt("enter the first number"));
+         var flag=0;
+        //  var i=2;
+         for(let i=2;i<=n/2;i++){
+            if(n%i==0){
+                flag=1;
+                break;
+            }
+        }
+        if(flag==0){
+            document.write("::: is prime");
+        }
+        else{
+              document.write("not prime::");
+        }
+    </script>
+</body>
+</html>

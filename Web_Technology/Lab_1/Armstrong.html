@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armtrong number_Demo</title>
+</head>
+
+<body>
+    <script>
+        var n = parseInt((prompt("enter the first number")));
+        var digitLength = n.toString().length;
+        var remainder;
+        var temp = n;
+        var ans = 0;
+        while (temp > 0) {
+            remainder = temp % 10;
+            ans = ans + (remainder ** digitLength)
+            temp = parseInt(temp/10);
+        }
+        document.write("num is " + ans);
+    </script>
+</body>
+
+</html>

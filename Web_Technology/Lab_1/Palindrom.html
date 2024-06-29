@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrom_num</title>
+</head>
+<body>
+    <script>
+         var n=parseInt(prompt("enter the first number"));
+         var a=n;
+         var num2=0;
+         var d=0;
+         for(let i=0;a!=0;i++){
+            d=a%10;
+            num2=num2*10+d;
+            a = Math.floor(a/10);
+         }
+         if(n==num2){
+            document.write("num is palindrom");
+         }
+         else{
+            document.write(" no is not palindrom");
+         }
+    </script>
+</body>
+</html>
